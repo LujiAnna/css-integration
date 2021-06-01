@@ -1,0 +1,41 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("flaticon.ttf?d13a33434cdccc65093e835a01a5b924") format("truetype"),
+url("flaticon.woff?d13a33434cdccc65093e835a01a5b924") format("woff"),
+url("flaticon.woff2?d13a33434cdccc65093e835a01a5b924") format("woff2"),
+url("flaticon.eot?d13a33434cdccc65093e835a01a5b924#iefix") format("embedded-opentype"),
+url("flaticon.svg?d13a33434cdccc65093e835a01a5b924#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "sparkling-water": "\f101",
+    "n": "\f102",
+    "bull-face-frontal-outline": "\f103",
+    "github": "\f104",
+);
+
+.flaticon-sparkling-water:before {
+    content: map-get($flaticon-map, "sparkling-water");
+}
+.flaticon-n:before {
+    content: map-get($flaticon-map, "n");
+}
+.flaticon-bull-face-frontal-outline:before {
+    content: map-get($flaticon-map, "bull-face-frontal-outline");
+}
+.flaticon-github:before {
+    content: map-get($flaticon-map, "github");
+}
