@@ -335,7 +335,7 @@ h1 {
   font-weight: 600;
 }
 
-/* Add your grid CSS below here */
+/* Add your grid & flexbox CSS below here */
 
 /* Interface 2: dashboard*/
 
@@ -402,6 +402,12 @@ h1 {
 
 /* Interface 3: card*/
 
+.card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
+  max-width: 50%;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
